@@ -26,7 +26,6 @@ fn main() -> Result<(),String>{
     let mut drawables : Vec<&mut dyn Entity> = Vec::new();
     let mut stuff : Vec<& dyn Entity> = Vec::new();
 
-    let t : MutSharedCollection<& dyn Entity> = MutSharedCollection::from_iter(stuff.into_iter());
 
     let mut player = Player{
         bounding_box : sdl2::rect::Rect::new(250, 250, 100, 100)
